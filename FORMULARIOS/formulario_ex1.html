@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="#lara">
+        Qual o seu primeiro nome?
+        <input type="text" name="primeiro_nome" value="carlos" size="10" maxlength="15">
+        
+        <br><br>
+
+        Informe sua senha de acesso (8 caracteres):
+        <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">
+
+        <br><br>
+
+        Você não pode visualizar nada aqui embaixo:
+        <input type="hidden" value="form12" name="nome_oculto">
+
+        <br><br>
+
+        Por favor, escreva aqui suas sugestões, dúvidas e críticas:
+        <textarea name="critica" cols="40" rows="3">
+            Gostaria de obter mais informações sobre este servidor. Grato.
+        </textarea>
+
+        <br><br>
+
+        Onde você pretende fazer turismo nas férias? <br>
+        <select name="lugares_para_ver">
+            <option> Fortaleza </option>
+            <option value="sul"> Florianópolis ou Porto Alegre </option>
+            <option> Rio de Janeiro </option>
+            <option selected> Brasília </option>
+            <option value="amazonia"> Manaus </option>
+        </select>
+
+        <br><br>
+
+        Que facilidades de acomodação você prefere? <br>
+        <select name="opcional" multiple size="5">
+            <option> Televisão </option>
+            <option value="casal" selected> Cama de Casal </option>
+            <option> Ar Condicionado </option>
+            <option> Fax </option>
+            <option selected> Modem V.34 </option>
+            <option> Sauna </option>
+            <option> Lavanderia </option>
+            <option> Frigo-Bar </option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" name="veiculo1" value="bicicleta"/> Eu tenho uma bicicleta <br>
+        <input type="checkbox" name="veiculo2" value="carro"/> Eu tenho um carro <br>
+        <input type="checkbox" name="veiculo3" value="barco"/> Eu tenho uma barco
+
+        <br><br>
+
+        <p> Por favor selecione o seu gênero: </p>
+        <input type="radio" name="genero" value="male"/> Masculino <br>
+        <input type="radio" name="genero" value="female"/> Feminino <br>
+        <input type="radio" name="genero" value="other"/> Outro <br>
+
+        <p> Por favor selecione a sua idade: </p>
+        <input type="radio" name="idade" value="30"/> 0 - 30 <br>
+        <input type="radio" name="idade" value="60"/> 31 - 60 <br>
+        <input type="radio" name="idade" value="100"/> 61 - 100 <br>
+
+        <br><br>
+
+        Email: <input type="email" name="email"/> <br>
+        Pin: <input type="password" name="pin" maxlength="4"/> <br>
+        <input type="reset" value="Reset"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
